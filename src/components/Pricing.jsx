@@ -39,7 +39,7 @@ function PriceCard({ tier, price, tierIncludes = [], popular = false }) {
                     </svg>
                 </button>
 
-                <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of any other application like this.</p>
             </div>
         </div>
     );
