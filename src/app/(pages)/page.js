@@ -3,18 +3,16 @@
 import useAppwrite from '@/appwrite/authContext'
 import Features from '@/components/Features';
 import Footer from '@/components/Footer';
+import GetStarted from '@/components/GetStarted';
 import Header from '@/components/Header';
 import Pricing from '@/components/Pricing';
 import RadientBg from '@/components/RadientBg';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-
 export default function LandingPage() {
   const { isLoggedIn } = useAppwrite();
   const { replace } = useRouter();
-
-
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -23,7 +21,7 @@ export default function LandingPage() {
   }, [isLoggedIn]);
 
   return (
-    <div>
+    <div className='h-full'>
       <div className="bg-white">
 
         <Header linkText='Log in' linkUrl='/auth' />
@@ -41,20 +39,19 @@ export default function LandingPage() {
                   Stay informed and engaged across campuses with UniSphere!
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                  <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+                  <a href="/#getting-started" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+                  <a href="/#pricing" className="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
                 </div>
               </div>
             </div>
 
             <Features />
+            <GetStarted />
             <Pricing />
-            <Footer />
           </RadientBg>
-
         </div>
+        <Footer />
       </div>
-
     </div>
   )
 }

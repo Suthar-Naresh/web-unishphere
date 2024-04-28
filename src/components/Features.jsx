@@ -62,7 +62,7 @@ export default function Features() {
         <div className="bg-white sm:py-32" id="features">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Tap,Disocver,Engage</h2>
+                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Tap, Disocver, Engage</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need for your event</p>
                     <p className="mt-6 text-lg leading-8 text-gray-600">Unisphere is a cutting-edge event management app for educational institutions, streamlining event organization and enhancing campus engagement. Discover, register, and participate in events effortlessly with Unisphere's intuitive platform.</p>
                 </div>

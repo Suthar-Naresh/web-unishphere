@@ -2,6 +2,7 @@
 
 import appwriteService from "@/appwrite/auth";
 import useAppwrite from "@/appwrite/authContext";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import RadientBg from "@/components/RadientBg";
 import { useRouter } from "next/navigation";
@@ -73,6 +74,8 @@ function AuthPage() {
                     </section>
                 </RadientBg>
             </div>
+
+            <Footer/>
         </div>
     )
 }

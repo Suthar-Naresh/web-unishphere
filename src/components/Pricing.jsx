@@ -39,7 +39,7 @@ function PriceCard({ tier, price, tierIncludes = [], popular = false }) {
                     </svg>
                 </button>
 
-                <p className="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+                <p className="text-xs text-gray-500 mt-3">Select the plan which suits your university requirements.</p>
             </div>
         </div>
     );
@@ -50,8 +50,8 @@ export default function Pricing() {
         <section className="text-gray-600 body-font overflow-hidden" id="pricing">
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+                    <h1 className="sm:text-4xl text-3xl font-bold title-font mb-2 text-gray-900">Pricing</h1>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Discover our flexible pricing options designed to suit every budget and need. With plans tailored for students, universities, and institutions alike, there's something for everyone at UniSphere. Explore our pricing options and find the perfect plan for you!</p>
                 </div>
                 <div className="flex flex-wrap -m-4">
 

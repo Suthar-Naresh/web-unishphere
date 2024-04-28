@@ -26,8 +26,8 @@ export default function Header({ linkText, linkUrl }) {
             text: 'Pricing'
         },
         {
-            href: '/#',
-            text: 'Company'
+            href: '/#getting-started',
+            text: 'Get Started'
         }
     ];
 
