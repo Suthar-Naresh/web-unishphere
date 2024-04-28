@@ -5,13 +5,18 @@ export default function SettingsDialog({ open, setOpen }) {
     const cancelButtonRef = useRef(null);
     const [formSubmitting, setFormSubmitting] = useState(false);
 
+    const [changePassword, setChangePassword] = useState('');
+    const [changeURL, setChangeURL] = useState('');
+
     const handleUpdateButton = async () => {
         setFormSubmitting(true);
 
         setTimeout(() => {
+            setChangePassword('');
+            setChangeURL('');
             setFormSubmitting(false);
             setOpen(false);
-        }, 5000);
+        }, 2000);
 
     }
 
@@ -67,6 +72,8 @@ export default function SettingsDialog({ open, setOpen }) {
                                                         name="change-password"
                                                         type="password"
                                                         placeholder="* * * * * * * *"
+                                                        value={changePassword}
+                                                        onChange={e => setChangePassword(e.target.value)}
                                                         className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none sm:text-sm sm:leading-6"
                                                     />
                                                 </div>
@@ -79,6 +86,8 @@ export default function SettingsDialog({ open, setOpen }) {
                                                         name="change-url"
                                                         type="url"
                                                         placeholder="https://www.your-university.com/api/check"
+                                                        value={changeURL}
+                                                        onChange={e => setChangeURL(e.target.value)}
                                                         className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 outline-none sm:text-sm sm:leading-6"
                                                     />
                                                 </div>
@@ -92,7 +101,6 @@ export default function SettingsDialog({ open, setOpen }) {
                                         className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
                                         onClick={handleUpdateButton}
                                     >
-
                                         {
                                             formSubmitting
                                             &&
